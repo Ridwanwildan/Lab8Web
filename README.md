@@ -10,7 +10,7 @@ Made With : [![Google Chrome](https://img.shields.io/badge/Google_chrome-4285F4?
 Daftar isi :
 
 - [Run MYSQL Server](https://github.com/Ridwanwildan/Lab8Web#run-mysql-server)
-- [Run Web Server](https://github.com/Ridwanwildan/Lab7Web#run-web-server)
+- [Go To PHPMyAdmin](https://github.com/Ridwanwildan/Lab8Web#go-to-phpmyadmin)
 - [Create Folder and File](https://github.com/Ridwanwildan/Lab7Web#create-folder-and-file)
 - [Hello World](https://github.com/Ridwanwildan/Lab7Web#hello-world)
 - [Variable](https://github.com/Ridwanwildan/Lab7Web#variable)
@@ -77,3 +77,36 @@ VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 
 Hasilnya bisa dilihat di menu `browse`.
 
 ![Gambar 5](Screenshoots/Capture5.PNG)
+
+## Initialization in Root Directory
+
+Selanjutnya adalah melakukan beberapa inisialisasi seperti membuat file dan folder pada root directory web server. Secara default, root directory web server letaknya ada di `C:\xampp\htdocs`.
+
+### Create Folder
+
+Buat sebuah folder didalam root directory dengan nama `lab8_php_database`. Setelah itu akses `http://localhost/lab8_php_database` dan terlihat bahwa directory tersebut belum memiliki file sama sekali.
+
+### Create Connection File
+
+Buat sebuah file PHP dengan nama `koneksi.php` didalam directory `lab8_php_database`. File ini berfungsi untuk menghubungkan database yang sudah dibuat sebelumnya. Seperti ini :
+
+```bash
+<?php
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db = "latihan1";
+    $conn = mysqli_connect($host, $user, $pass, $db);
+    if ($conn == false)
+        {
+        echo "Koneksi ke server gagal.";
+        die();
+        }
+    else
+        echo "Koneksi berhasil";
+?>
+```
+
+Setelah selesai dibuat, coba buka file tersebut dan hasilnya akan seperti ini :
+
+![Gambar 6](Screenshoots/Capture6.PNG)
