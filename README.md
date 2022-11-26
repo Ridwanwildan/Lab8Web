@@ -273,6 +273,8 @@ Selanjutnya adalah membuat file baru dengan nama `tambah.php` yang fungsinya ada
 
 ![Gambar 8](Screenshoots/Capture8.PNG)
 
+![Gambar 9](Screenshoots/Capture9.PNG)
+
 `tambah.php` belum bisa diakses secara langsung dari index. Maka tambahkan terlebih dahulu link di `index.php` yang mengarah ke `tambah.php` supaya bisa melakukan aktifitas create.
 
 ```bash
