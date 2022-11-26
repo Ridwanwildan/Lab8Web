@@ -27,4 +27,53 @@ Pertama adalah melakukan running pada MYSQL server. Caranya adalah buka [XAMPP](
 
 ![Gambar 1](Screenshoots/Capture1.PNG)
 
-##
+## Go To PHPMyAdmin
+
+Setelah pertama sudah berhasil running MYSQL server, selanjutnya adalah mengakses PHPMyAdmin di `http://localhost/phpmyadmin`. Akan terlihat menu utama dari PHPMyAdmin dan beberapa database yang sudah ada pada komputer.
+
+### Create Database
+
+Kemudian buat database baru menggunakan query dengan nama `latihan1`. Seperti ini :
+
+```bash
+CREATE DATABASE latihan1;
+```
+
+![Gambar 2](Screenshoots/Capture2.PNG)
+
+### Create Table
+
+Pada latihan kali ini, Studi kasusnya adalah Data Barang. Maka buatlah tabel dengan nama `data_barang` dan dengan query seperti ini :
+
+```bash
+CREATE TABLE data_barang (
+ id_barang int(10) auto_increment Primary Key,
+ kategori varchar(30),
+ nama varchar(30),
+ gambar varchar(100),
+ harga_beli decimal(10,0),
+ harga_jual decimal(10,0),
+ stok int(4)
+);
+```
+
+![Gambar 3](Screenshoots/Capture3.PNG)
+
+Klik Go dan hasilnya bisa dilihat pada table structure.
+
+![Gambar 4](Screenshoots/Capture4.PNG)
+
+### Add Data
+
+Setelah tabel berhasil dibuat maka tabel tersebut masih kosong. Isi tabelnya dengan query seperti ini :
+
+```bash
+INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok)
+VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 5),
+('Elektronik', 'HP Xiaomi Android', 'hp_xiaomi.jpg', 1000000, 1400000, 5),
+('Elektronik', 'HP OPPO Android', 'hp_oppo.jpg', 1800000, 2300000, 5);
+```
+
+Hasilnya bisa dilihat di menu `browse`.
+
+![Gambar 5](Screenshoots/Capture5.PNG)
