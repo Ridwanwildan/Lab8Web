@@ -12,14 +12,7 @@ Daftar isi :
 - [Run MYSQL Server](https://github.com/Ridwanwildan/Lab8Web#run-mysql-server)
 - [Go To PHPMyAdmin](https://github.com/Ridwanwildan/Lab8Web#go-to-phpmyadmin)
 - [Initialization in Root Directory](https://github.com/Ridwanwildan/Lab8Web#initialization-in-root-directory)
-- [Hello World](https://github.com/Ridwanwildan/Lab7Web#hello-world)
-- [Variable](https://github.com/Ridwanwildan/Lab7Web#variable)
-- [Predefine Variable GET](https://github.com/Ridwanwildan/Lab7Web#predefine-variable-get)
-- [Create Form Input](https://github.com/Ridwanwildan/Lab7Web#create-form-input)
-- [Operator](https://github.com/Ridwanwildan/Lab7Web#operator)
-- [Conditional](https://github.com/Ridwanwildan/Lab7Web#conditional)
-- [Loop](https://github.com/Ridwanwildan/Lab7Web#loop)
-- [Tugas](https://github.com/Ridwanwildan/Lab7Web#tugas)
+- [Build CRUD](https://github.com/Ridwanwildan/Lab8Web#build-crud)
 
 ## Run MYSQL Server
 
@@ -385,7 +378,9 @@ Update adalah melakukan penggantian value seperti mengganti nama, harga, stok da
 </html>
 ```
 
-![Gambar 9](Screenshoots/Capture9.PNG)
+![Gambar 10](Screenshoots/Capture10.PNG)
+
+![Gambar 11](Screenshoots/Capture11.PNG)
 
 ### Delete
 
@@ -400,3 +395,5 @@ Buat file PHP baru dengan nama `hapus.php` yang fungsinya untuk menghapus data. 
     header('location: index.php');
 ?>
 ```
+
+![Gambar 12](Screenshoots/Capture12.PNG)
